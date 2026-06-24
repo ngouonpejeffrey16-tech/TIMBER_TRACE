@@ -1,0 +1,49 @@
+<!-- @dsCard group="Social" viewport="1080x1920" name="Snapchat — ad / story" subtitle="1080×1920 with seller angle" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin:0; }
+  .snap { width:1080px; height:1920px; position:relative; overflow:hidden; background:var(--forest-900); font-family:var(--font-sans); color:var(--cream); }
+  .bg { position:absolute; inset:0; background:center/cover url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1400&q=75'); opacity:.4; }
+  .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(22,36,28,.7), rgba(22,36,28,.95)); }
+  .inner { position:absolute; inset:0; padding:80px 64px; display:flex; flex-direction:column; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .brand img { height:56px; }
+  .brand span { font-family:var(--font-display); font-weight:600; font-size:42px; }
+  .spacer { flex:1; }
+  .eyebrow { font-size:28px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--clay-400); }
+  h1 { font-family:var(--font-display); font-weight:600; font-size:108px; line-height:0.98; margin:24px 0 0; }
+  .sub { font-size:36px; line-height:1.5; color:var(--forest-100); margin-top:32px; max-width:840px; }
+  .payout { margin-top:56px; background:rgba(250,248,243,0.1); border:1px solid rgba(250,248,243,0.2); border-radius:24px; padding:44px; }
+  .row { display:flex; justify-content:space-between; font-size:34px; color:var(--forest-200); margin-bottom:18px; }
+  .row b { font-family:var(--font-mono); color:#fff; }
+  .div { height:2px; background:rgba(250,248,243,0.2); margin:14px 0 24px; }
+  .big { display:flex; justify-content:space-between; align-items:baseline; }
+  .big .l { font-size:36px; font-weight:600; }
+  .big .v { font-family:var(--font-display); font-weight:600; font-size:72px; color:#fff; }
+  .cta { margin-top:64px; text-align:center; background:var(--clay-500); color:#2a1c12; font-size:38px; font-weight:700; padding:36px; border-radius:20px; }
+</style>
+</head>
+<body>
+<div class="snap">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="inner">
+    <div class="brand"><img src="../assets/logo-mark.svg" alt=""><span>Timber Trace</span></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Got land to sell?</div>
+    <h1>Keep 95%.</h1>
+    <div class="sub">List your land free. We verify the title, map it, and handle escrow. One flat 5% fee — only when it sells.</div>
+    <div class="payout">
+      <div class="row"><span>Sale price</span><b>$184,000</b></div>
+      <div class="row"><span>Timber Trace fee (5%)</span><b>−$9,200</b></div>
+      <div class="div"></div>
+      <div class="big"><span class="l">You receive</span><span class="v">$174,800</span></div>
+    </div>
+    <div class="cta">List your land →</div>
+  </div>
+</div>
+</body>
+</html>

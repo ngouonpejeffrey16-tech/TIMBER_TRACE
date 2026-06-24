@@ -1,0 +1,9 @@
+<svg width="210" height="40" viewBox="0 0 210 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timber Trace">
+  <rect width="40" height="40" rx="9" fill="#1f3026"></rect>
+  <path d="M20 9c-6 0-11 4.6-11 10.3 0 3.1 1.5 5.6 3.7 7.4" stroke="#c98a5e" stroke-width="2" stroke-linecap="round" fill="none"></path>
+  <path d="M20 13.4c-3.7 0-6.7 2.7-6.7 6.2 0 1.9.9 3.5 2.3 4.7" stroke="#9db8a3" stroke-width="2" stroke-linecap="round" fill="none"></path>
+  <path d="M24.6 30 L20.4 12.6 L16.2 30 Z" fill="#e9dcc4"></path>
+  <path d="M20.4 12.6 L23.4 22 H17.4 Z" fill="#c98a5e"></path>
+  <rect x="19.4" y="28.5" width="2" height="3.6" rx="1" fill="#9db8a3"></rect>
+  <text x="52" y="27" font-family="Spectral, Georgia, serif" font-size="22" font-weight="600" fill="#1f3026" letter-spacing="-0.01em">Timber <tspan fill="#1f3026">Trace</tspan></text>
+</svg>

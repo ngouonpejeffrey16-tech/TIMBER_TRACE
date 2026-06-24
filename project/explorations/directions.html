@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Timber Trace — Brand Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=Libre+Caslon+Display&family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #e8e6e1;
+    font-family: 'Inter', sans-serif;
+    min-width: 100%;
+    width: max-content;
+    min-height: 100vh;
+    padding: 56px;
+  }
+  .pagehead { margin-bottom: 40px; max-width: 760px; }
+  .pagehead h1 { font-family: 'Spectral', serif; font-size: 34px; font-weight: 600; color: #1a1a17; letter-spacing: -0.01em; }
+  .pagehead p { margin-top: 10px; color: #57544c; font-size: 15px; line-height: 1.5; }
+  .row { display: flex; gap: 40px; align-items: flex-start; }
+  .col { flex: none; width: 540px; }
+  .label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #57544c; margin-bottom: 12px; }
+  .label .dir { color: #1a1a17; }
+  .frame { background: #fff; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 30px rgba(0,0,0,.08); overflow: hidden; }
+
+  /* shared inner */
+  .hero { padding: 40px; }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+  .swatches { display: flex; gap: 0; }
+  .sw { height: 56px; flex: 1; }
+  .specimen { padding: 32px 40px; }
+  .specimen .big { letter-spacing: -0.02em; line-height: 1; }
+  .specimen .meta { display: flex; gap: 20px; margin-top: 16px; font-size: 12px; color: #57544c; }
+  .card { margin: 0 40px 40px; border-radius: 4px; overflow: hidden; }
+  .card .img { height: 130px; background-size: cover; background-position: center; position: relative; }
+  .card .body { padding: 16px; }
+  .card .price { font-weight: 700; }
+  .pill { position: absolute; top: 12px; left: 12px; font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 999px; }
+  .btn { display: inline-block; padding: 11px 18px; font-size: 13px; font-weight: 600; border-radius: 4px; margin-top: 14px; }
+
+  /* DIR 1 Wildwood */
+  .d1 .hero { background: #1f3026; color: #f3efe6; }
+  .d1 .eyebrow { color: #c98a5e; }
+  .d1 h2 { font-family: 'Spectral', serif; font-weight: 600; font-size: 40px; line-height: 1.04; letter-spacing: -0.01em; margin-top: 14px; }
+  .d1 .sub { color: #b9c4ba; margin-top: 14px; font-size: 14px; max-width: 360px; line-height: 1.55; }
+  .d1 .big { font-family: 'Spectral', serif; font-weight: 600; font-size: 64px; color: #1f3026; }
+  .d1 .card { border: 1px solid #e4e0d6; }
+  .d1 .card .img { background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=70'); }
+  .d1 .pill { background: #c98a5e; color: #2a1c12; }
+  .d1 .card .body { background: #faf8f3; }
+  .d1 .price { color: #1f3026; font-family: 'Spectral', serif; font-size: 20px; }
+  .d1 .loc { font-size: 13px; color: #57544c; margin-top: 2px; }
+  .d1 .btn { background: #c98a5e; color: #2a1c12; }
+
+  /* DIR 2 Surveyor */
+  .d2 .hero { background: #14233b; color: #eef1f5; }
+  .d2 .eyebrow { color: #c9a96a; }
+  .d2 h2 { font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 42px; line-height: 1.05; margin-top: 14px; }
+  .d2 .sub { color: #a9b6c8; margin-top: 14px; font-size: 14px; max-width: 360px; line-height: 1.55; }
+  .d2 .big { font-family: 'Libre Caslon Display', serif; font-size: 60px; color: #14233b; }
+  .d2 .card { border: 1px solid #dfe3e8; }
+  .d2 .card .img { background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=70'); }
+  .d2 .pill { background: #14233b; color: #c9a96a; }
+  .d2 .card .body { background: #fff; }
+  .d2 .price { color: #14233b; font-family: 'Libre Caslon Display', serif; font-size: 21px; }
+  .d2 .loc { font-size: 13px; color: #5a6473; margin-top: 2px; }
+  .d2 .btn { background: #c9a96a; color: #14233b; }
+
+  /* DIR 3 Terra */
+  .d3 .hero { background: #f4f3ef; color: #14140f; }
+  .d3 .eyebrow { color: #3f7d3a; }
+  .d3 h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 42px; line-height: 1.02; letter-spacing: -0.02em; margin-top: 14px; }
+  .d3 .sub { color: #56564d; margin-top: 14px; font-size: 14px; max-width: 360px; line-height: 1.55; }
+  .d3 .big { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 62px; color: #14140f; }
+  .d3 .card { border: 1px solid #e3e2db; }
+  .d3 .card .img { background-image: url('https://images.unsplash.com/photo-1444044205806-38f3ed106c10?w=800&q=70'); }
+  .d3 .pill { background: #3f7d3a; color: #fff; }
+  .d3 .card .body { background: #fff; }
+  .d3 .price { color: #14140f; font-family: 'Space Grotesk', sans-serif; font-size: 20px; }
+  .d3 .loc { font-size: 13px; color: #56564d; margin-top: 2px; }
+  .d3 .btn { background: #14140f; color: #f4f3ef; }
+  .specimen.dark { color: inherit; }
+  .swrow { font-size: 10px; color: #8a8678; padding: 8px 40px 0; display: flex; gap: 0; }
+  .swrow span { flex: 1; }
+</style>
+</head>
+<body>
+  <div class="pagehead">
+    <h1>Timber Trace — three brand directions</h1>
+    <p>A marketplace for buying &amp; selling land parcels. Each direction sets a color palette, a type pairing, and shows it on a hero and a listing card. Tell me which to build the full system on — or mix elements.</p>
+  </div>
+  <div class="row">
+
+    <!-- DIR 1 -->
+    <div class="col d1">
+      <div class="label">Direction 1 — <span class="dir">Wildwood</span> · earthy, warm, editorial</div>
+      <div class="frame">
+        <div class="hero">
+          <div class="eyebrow">Timber Trace</div>
+          <h2>Own a piece of the wild.</h2>
+          <div class="sub">Vetted acreage, transparent title history, and surveyor-grade maps for every parcel.</div>
+        </div>
+        <div class="swatches">
+          <div class="sw" style="background:#1f3026"></div>
+          <div class="sw" style="background:#3a5a44"></div>
+          <div class="sw" style="background:#c98a5e"></div>
+          <div class="sw" style="background:#e9dcc4"></div>
+          <div class="sw" style="background:#faf8f3"></div>
+        </div>
+        <div class="swrow"><span>Forest</span><span>Moss</span><span>Clay</span><span>Wheat</span><span>Cream</span></div>
+        <div class="specimen">
+          <div class="big">Aa</div>
+          <div class="meta"><span>Spectral — display serif</span><span>Inter — UI &amp; body</span></div>
+        </div>
+        <div class="card">
+          <div class="img"><span class="pill">42 acres</span></div>
+          <div class="body">
+            <div class="price">$184,000</div>
+            <div class="loc">Cascade Ridge, Whatcom County, WA</div>
+            <a class="btn">View parcel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIR 2 -->
+    <div class="col d2">
+      <div class="label">Direction 2 — <span class="dir">Surveyor</span> · trustworthy, institutional</div>
+      <div class="frame">
+        <div class="hero">
+          <div class="eyebrow">Timber Trace</div>
+          <h2>Land, with the paperwork in order.</h2>
+          <div class="sub">Title-verified listings, escrow built in, and a clear record for every transaction.</div>
+        </div>
+        <div class="swatches">
+          <div class="sw" style="background:#14233b"></div>
+          <div class="sw" style="background:#2c4a6e"></div>
+          <div class="sw" style="background:#c9a96a"></div>
+          <div class="sw" style="background:#e6e9ee"></div>
+          <div class="sw" style="background:#ffffff"></div>
+        </div>
+        <div class="swrow"><span>Ink</span><span>Slate</span><span>Brass</span><span>Mist</span><span>Paper</span></div>
+        <div class="specimen">
+          <div class="big">Aa</div>
+          <div class="meta"><span>Libre Caslon — display</span><span>Inter — UI &amp; body</span></div>
+        </div>
+        <div class="card">
+          <div class="img"><span class="pill">Title verified</span></div>
+          <div class="body">
+            <div class="price">$184,000</div>
+            <div class="loc">Cascade Ridge, Whatcom County, WA</div>
+            <a class="btn">View parcel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIR 3 -->
+    <div class="col d3">
+      <div class="label">Direction 3 — <span class="dir">Terra</span> · modern, premium, minimal</div>
+      <div class="frame">
+        <div class="hero">
+          <div class="eyebrow">Timber Trace</div>
+          <h2>The clearest way to buy land.</h2>
+          <div class="sub">High-resolution maps, instant parcel data, and a checkout that actually makes sense.</div>
+        </div>
+        <div class="swatches">
+          <div class="sw" style="background:#14140f"></div>
+          <div class="sw" style="background:#3f7d3a"></div>
+          <div class="sw" style="background:#9cc24a"></div>
+          <div class="sw" style="background:#dcdbd2"></div>
+          <div class="sw" style="background:#f4f3ef"></div>
+        </div>
+        <div class="swrow"><span>Char</span><span>Pine</span><span>Lime</span><span>Stone</span><span>Bone</span></div>
+        <div class="specimen">
+          <div class="big">Aa</div>
+          <div class="meta"><span>Space Grotesk — display</span><span>Inter — body</span></div>
+        </div>
+        <div class="card">
+          <div class="img"><span class="pill">New</span></div>
+          <div class="body">
+            <div class="price">$184,000</div>
+            <div class="loc">Cascade Ridge, Whatcom County, WA</div>
+            <a class="btn">View parcel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

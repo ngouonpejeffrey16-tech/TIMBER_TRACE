@@ -1,0 +1,27 @@
+/* Timber Trace — Radius, shadows, motion */
+:root {
+  /* Corner radii — restrained, slightly soft. Cards 4px, controls 4px, pills full. */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows — soft, warm-tinted, low spread. Land/paper feel, never neon. */
+  --shadow-xs: 0 1px 2px rgba(31, 48, 38, 0.06);
+  --shadow-sm: 0 1px 2px rgba(31, 48, 38, 0.06), 0 2px 6px rgba(31, 48, 38, 0.06);
+  --shadow-md: 0 2px 4px rgba(31, 48, 38, 0.06), 0 8px 24px rgba(31, 48, 38, 0.08);
+  --shadow-lg: 0 4px 8px rgba(31, 48, 38, 0.07), 0 18px 48px rgba(31, 48, 38, 0.12);
+  --shadow-inset: inset 0 1px 2px rgba(31, 48, 38, 0.08);
+
+  /* Focus */
+  --focus-shadow: 0 0 0 3px rgba(201, 138, 94, 0.4);
+
+  /* Motion — calm, no bounce. */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur-base: 200ms; /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+}
