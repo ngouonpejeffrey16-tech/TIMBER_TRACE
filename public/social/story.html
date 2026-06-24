@@ -1,0 +1,51 @@
+<!-- @dsCard group="Social" viewport="1080x1920" name="Instagram / Snapchat — story" subtitle="1080×1920 vertical story" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body { margin:0; }
+  .story { width:1080px; height:1920px; position:relative; overflow:hidden; background:var(--cream); font-family:var(--font-sans); }
+  .photo { position:absolute; top:0; left:0; right:0; height:1080px; background:center/cover url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1400&q=75'); }
+  .photo .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(22,36,28,.5), rgba(250,248,243,0) 55%, var(--cream) 100%); }
+  .brand { position:absolute; top:64px; left:64px; display:flex; align-items:center; gap:16px; z-index:2; }
+  .brand img { height:56px; }
+  .brand span { font-family:var(--font-display); font-weight:600; font-size:42px; color:#fff; }
+  .pill { position:absolute; top:80px; right:64px; z-index:2; background:var(--clay-500); color:#2a1c12; font-size:26px; font-weight:700; padding:14px 28px; border-radius:999px; letter-spacing:.04em; }
+  .body { position:absolute; top:980px; left:64px; right:64px; }
+  .eyebrow { font-size:26px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--clay-600); }
+  h1 { font-family:var(--font-display); font-weight:600; font-size:96px; line-height:1.0; letter-spacing:-0.01em; color:var(--forest-800); margin:20px 0 0; }
+  .sub { font-size:34px; line-height:1.5; color:var(--text-body); margin-top:28px; }
+  .card { margin-top:48px; background:var(--paper); border:1px solid var(--border-subtle); border-radius:20px; box-shadow:var(--shadow-md); overflow:hidden; }
+  .card .ph { height:300px; background:center/cover url('https://images.unsplash.com/photo-1444044205806-38f3ed106c10?w=1000&q=70'); position:relative; }
+  .card .ac { position:absolute; top:24px; left:24px; background:var(--forest-700); color:#fff; font-size:24px; font-weight:600; padding:10px 20px; border-radius:999px; }
+  .card .meta { padding:28px 32px; display:flex; align-items:center; justify-content:space-between; }
+  .price { font-family:var(--font-display); font-weight:600; font-size:54px; color:var(--forest-800); }
+  .loc { font-size:28px; color:var(--text-muted); margin-top:6px; }
+  .ver { display:flex; align-items:center; gap:10px; background:var(--success-bg); color:var(--success-fg); font-size:24px; font-weight:600; padding:12px 20px; border-radius:999px; }
+  .cta { position:absolute; bottom:90px; left:64px; right:64px; text-align:center; background:var(--forest-800); color:var(--cream); font-size:36px; font-weight:700; padding:34px; border-radius:18px; }
+  .swipe { position:absolute; bottom:40px; left:0; right:0; text-align:center; color:var(--text-muted); font-size:26px; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="photo"><div class="scrim"></div></div>
+  <div class="brand"><img src="/logo-mark.svg" alt=""><span>Timber Trace</span></div>
+  <div class="pill">NEW APP</div>
+  <div class="body">
+    <div class="eyebrow">Land, made simple</div>
+    <h1>Find your<br>acreage.</h1>
+    <div class="card">
+      <div class="ph"><div class="ac">42 acres</div></div>
+      <div class="meta">
+        <div><div class="price">$184,000</div><div class="loc">Whatcom County, WA</div></div>
+        <div class="ver">✓ Title verified</div>
+      </div>
+    </div>
+  </div>
+  <div class="cta">Get Timber Trace →</div>
+  <div class="swipe">Swipe up to download</div>
+</div>
+</body>
+</html>

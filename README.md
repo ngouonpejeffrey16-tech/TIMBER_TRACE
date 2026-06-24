@@ -1,25 +1,62 @@
-# CODING AGENTS: READ THIS FIRST
+# Timber Trace
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+A marketplace web app for buying and selling land parcels — vetted acreage with transparent title history, surveyor-grade maps, and built-in escrow. Built from the **Timber Trace Design System** (see `project/` for the original design bundle).
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Stack
 
-## What you should do — IMPORTANT
+- **Vite** + **React 18**
+- **React Router** for navigation
+- Design tokens as CSS custom properties (no CSS framework)
+- Fonts: Spectral (display), Inter (UI), Space Grotesk (data) via Google Fonts
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+## Getting started
 
-**Find the primary design file under `project/` and read it top to bottom.** The chat transcripts will tell you which file the user was last iterating on. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build to dist/
+npm run preview  # preview the production build
+```
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+## Routes
 
-## About the design files
+| Path            | Screen                                                              |
+| --------------- | ------------------------------------------------------------------ |
+| `/`             | Marketing landing — hero, search, featured parcels, how-it-works   |
+| `/browse`       | Browse/search — filter sidebar, sort, listing grid                 |
+| `/listing/:id`  | Parcel detail — gallery, facts, map, price sidebar, make-an-offer  |
+| `/dashboard`    | Seller dashboard — stats + listings table                          |
+| `/list`         | "List your land" 5-step upload wizard with live 5% payout          |
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+State for saved parcels is lifted into `App.jsx` and shared across the browse and detail views.
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Project structure
 
-## Bundle contents
+```
+src/
+  components/      Reusable UI primitives (Button, Card, Badge, Tag, Avatar,
+                   Input, Select, Checkbox, ListingCard)
+  icons/           Lucide-style inline stroke icon set
+  pages/           Marketing, Browse, Detail, Dashboard, ListYourLand
+  data/            Listing seed data
+  styles/          index.css + tokens/ (colors, typography, spacing, effects, fonts)
+public/
+  logo-mark.svg, logo-lockup.svg
+  social/          Static social marketing assets (Instagram, story, Snapchat,
+                   launch / link-in-bio page) — open directly or screenshot to post
+project/           Original Claude Design handoff bundle (design system source)
+```
 
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Timber Trace Design System` project files (HTML prototypes, assets, components)
+## Commission model
+
+Timber Trace charges a flat **5% commission**, deducted from the seller's payout only when a parcel sells. This is surfaced in two places:
+
+- The **List your land** wizard (Price step) shows a live payout calculator.
+- The buyer's **Make an offer** modal notes the seller-paid fee and escrow terms.
+
+## Notes & caveats
+
+- This was designed from scratch (the original brand repo had no source design), so every visual decision is an original proposal from the Wildwood direction (forest green + warm clay, Spectral serif).
+- Stock imagery uses Unsplash URLs as placeholders — replace with licensed land photography for production.
+- Icons are redrawn in the Lucide style inline; swap in canonical Lucide glyphs if preferred.
+- The social assets in `public/social/` are static templates — the App Store / Google Play badges and social links are placeholders pointing at `#`. Point them at real URLs before publishing.

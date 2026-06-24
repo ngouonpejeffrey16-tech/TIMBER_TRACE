@@ -1,0 +1,43 @@
+<!-- @dsCard group="Social" viewport="1080x1080" name="Instagram — feed post" subtitle="1080×1080 launch post" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body { margin:0; }
+  .post { width:1080px; height:1080px; position:relative; overflow:hidden; background:var(--forest-800); font-family:var(--font-sans); color:var(--cream); }
+  .bg { position:absolute; inset:0; background:center/cover url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&q=75'); }
+  .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(31,48,38,.55) 0%, rgba(22,36,28,.4) 45%, rgba(22,36,28,.95) 100%); }
+  .inner { position:absolute; inset:0; padding:72px; display:flex; flex-direction:column; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .brand img { height:54px; }
+  .eyebrow { font-size:24px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--clay-400); }
+  h1 { font-family:var(--font-display); font-weight:600; font-size:104px; line-height:0.98; letter-spacing:-0.01em; margin:0; }
+  .sub { font-size:32px; line-height:1.5; color:var(--forest-100); max-width:760px; }
+  .badges { display:flex; gap:14px; flex-wrap:wrap; }
+  .b { display:flex; align-items:center; gap:10px; background:rgba(250,248,243,0.12); border:1px solid rgba(250,248,243,0.22); padding:14px 22px; border-radius:999px; font-size:24px; font-weight:600; }
+  .cta { display:inline-flex; align-items:center; gap:14px; background:var(--clay-500); color:#2a1c12; font-size:30px; font-weight:700; padding:24px 40px; border-radius:12px; }
+  .spacer { flex:1; }
+  .dot { width:12px; height:12px; border-radius:50%; background:var(--green-600); }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="inner">
+    <div class="brand"><img src="/logo-mark.svg" alt=""><span style="font-family:var(--font-display);font-weight:600;font-size:40px;">Timber Trace</span></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Now live</div>
+    <h1>Own a piece<br>of the wild.</h1>
+    <div class="sub" style="margin:28px 0 36px;">Buy &amp; sell land with verified titles, real maps, and escrow built in. Sellers keep 95% — we take a flat 5%.</div>
+    <div class="badges" style="margin-bottom:40px;">
+      <div class="b"><span class="dot"></span> Title verified</div>
+      <div class="b">🌲 12,400+ parcels</div>
+      <div class="b">Escrow included</div>
+    </div>
+    <div class="cta">Download the app →</div>
+  </div>
+</div>
+</body>
+</html>

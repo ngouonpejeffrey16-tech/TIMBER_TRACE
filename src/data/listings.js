@@ -1,0 +1,58 @@
+export const LISTINGS = [
+  {
+    id: 1,
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=70',
+    price: 184000, acres: 42, verified: true,
+    title: 'Cascade Ridge', location: 'Whatcom County, WA',
+    zoning: 'Rural', access: 'Road', water: 'Creek',
+    tags: ['Wooded', 'Road access'],
+    facts: [{ label: 'Zoning', value: 'Rural' }, { label: 'Access', value: 'Road' }, { label: 'Water', value: 'Creek' }],
+  },
+  {
+    id: 2,
+    image: 'https://images.unsplash.com/photo-1444044205806-38f3ed106c10?w=900&q=70',
+    price: 96500, acres: 11, verified: true,
+    title: 'Birch Hollow', location: 'Lincoln County, OR',
+    zoning: 'Forest', access: 'Trail', water: 'Spring',
+    tags: ['Wooded', 'Off-grid'],
+    facts: [{ label: 'Zoning', value: 'Forest' }, { label: 'Access', value: 'Trail' }, { label: 'Water', value: 'Spring' }],
+  },
+  {
+    id: 3,
+    image: 'https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=900&q=70',
+    price: 312000, acres: 78, verified: false,
+    title: 'Still Lake Frontage', location: 'Itasca County, MN',
+    zoning: 'Recreational', access: 'Road', water: 'Lakefront',
+    tags: ['Waterfront', 'Road access'],
+    facts: [{ label: 'Zoning', value: 'Recreational' }, { label: 'Access', value: 'Road' }, { label: 'Water', value: 'Lakefront' }],
+  },
+  {
+    id: 4,
+    image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=900&q=70',
+    price: 58000, acres: 6, verified: true,
+    title: 'Sage Flats', location: 'Fremont County, ID',
+    zoning: 'Agricultural', access: 'Road', water: 'Well',
+    tags: ['Pasture', 'Road access'],
+    facts: [{ label: 'Zoning', value: 'Agricultural' }, { label: 'Access', value: 'Road' }, { label: 'Water', value: 'Well' }],
+  },
+  {
+    id: 5,
+    image: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=900&q=70',
+    price: 240000, acres: 55, verified: true,
+    title: 'Elk Meadow', location: 'Gallatin County, MT',
+    zoning: 'Rural', access: 'Road', water: 'River',
+    tags: ['Waterfront', 'Wooded'],
+    facts: [{ label: 'Zoning', value: 'Rural' }, { label: 'Access', value: 'Road' }, { label: 'Water', value: 'River' }],
+  },
+  {
+    id: 6,
+    image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=70',
+    price: 74500, acres: 9, verified: false,
+    title: 'Quartz Canyon', location: 'Coconino County, AZ',
+    zoning: 'Recreational', access: 'Trail', water: 'None',
+    tags: ['Off-grid'],
+    facts: [{ label: 'Zoning', value: 'Recreational' }, { label: 'Access', value: 'Trail' }, { label: 'Water', value: 'None' }],
+  },
+];
+
+export const FACETS = ['Wooded', 'Waterfront', 'Road access', 'Off-grid', 'Pasture'];

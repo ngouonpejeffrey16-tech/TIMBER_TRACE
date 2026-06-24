@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+:root {
+  --forest-900: #16241c;
+  --forest-800: #1f3026;
+  --forest-700: #2a4233;
+  --forest-600: #3a5a44;
+  --forest-500: #4a7155;
+  --forest-400: #6f9279;
+  --forest-300: #9db8a3;
+  --forest-200: #c7d6cb;
+  --forest-100: #e6eee8;
+
+  --clay-700: #9c5f37;
+  --clay-600: #b97544;
+  --clay-500: #c98a5e;
+  --clay-400: #d8a47e;
+  --clay-300: #e6c2a4;
+  --clay-200: #f0d8c4;
+  --clay-100: #f7ebe0;
+
+  --wheat-500: #d8c39a;
+  --wheat-300: #e9dcc4;
+  --wheat-100: #f3ead7;
+
+  --stone-900: #1a1a17;
+  --stone-800: #2b2a25;
+  --stone-700: #45433c;
+  --stone-600: #57544c;
+  --stone-500: #76726a;
+  --stone-400: #9b988f;
+  --stone-300: #c4c1b8;
+  --stone-200: #ddd9d0;
+  --stone-100: #ece9e1;
+  --stone-50:  #f5f3ec;
+
+  --cream: #faf8f3;
+  --paper: #ffffff;
+
+  --green-600: #3a7d4f;
+  --green-100: #e2f0e6;
+  --amber-600: #b9852f;
+  --amber-100: #f6ecd5;
+  --red-600:   #b4452f;
+  --red-100:   #f6e2dc;
+  --blue-600:  #2c5a82;
+  --blue-100:  #dde9f2;
+
+  --bg-page: var(--cream);
+  --bg-surface: var(--paper);
+  --bg-sunken: var(--stone-50);
+  --bg-inverse: var(--forest-800);
+
+  --surface-card: var(--paper);
+  --surface-muted: var(--stone-50);
+
+  --text-strong: var(--stone-900);
+  --text-body: var(--stone-700);
+  --text-muted: var(--stone-500);
+  --text-inverse: var(--cream);
+  --text-on-accent: #2a1c12;
+
+  --border-subtle: #e4e0d6;
+  --border-default: #d8d3c6;
+  --border-strong: var(--stone-400);
+
+  --accent: var(--clay-500);
+  --accent-hover: var(--clay-600);
+  --accent-press: var(--clay-700);
+
+  --primary: var(--forest-800);
+  --primary-hover: var(--forest-700);
+  --primary-press: var(--forest-900);
+
+  --focus-ring: var(--clay-500);
+
+  --success-fg: var(--green-600);
+  --success-bg: var(--green-100);
+  --warning-fg: var(--amber-600);
+  --warning-bg: var(--amber-100);
+  --danger-fg:  var(--red-600);
+  --danger-bg:  var(--red-100);
+  --info-fg:    var(--blue-600);
+  --info-bg:    var(--blue-100);
+}
+:root {
+  --font-display: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-display-xl: 64px;  --lh-display-xl: 1.02;
+  --fs-display-lg: 48px;  --lh-display-lg: 1.05;
+  --fs-display-md: 36px;  --lh-display-md: 1.1;
+  --fs-display-sm: 28px;  --lh-display-sm: 1.15;
+
+  --fs-h1: 24px;  --lh-h1: 1.25;
+  --fs-h2: 20px;  --lh-h2: 1.3;
+  --fs-h3: 17px;  --lh-h3: 1.4;
+
+  --fs-body-lg: 17px; --lh-body-lg: 1.6;
+  --fs-body: 15px;    --lh-body: 1.6;
+  --fs-body-sm: 13px; --lh-body-sm: 1.5;
+  --fs-caption: 12px; --lh-caption: 1.4;
+
+  --fs-eyebrow: 11px;
+  --tracking-eyebrow: 0.14em;
+  --tracking-tight: -0.02em;
+  --tracking-display: -0.01em;
+}
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  --container-max: 1200px;
+  --container-narrow: 760px;
+}
+:root {
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(31, 48, 38, 0.06);
+  --shadow-sm: 0 1px 2px rgba(31, 48, 38, 0.06), 0 2px 6px rgba(31, 48, 38, 0.06);
+  --shadow-md: 0 2px 4px rgba(31, 48, 38, 0.06), 0 8px 24px rgba(31, 48, 38, 0.08);
+  --shadow-lg: 0 4px 8px rgba(31, 48, 38, 0.07), 0 18px 48px rgba(31, 48, 38, 0.12);
+  --shadow-inset: inset 0 1px 2px rgba(31, 48, 38, 0.08);
+
+  --focus-shadow: 0 0 0 3px rgba(201, 138, 94, 0.4);
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+}
