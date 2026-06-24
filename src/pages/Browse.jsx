@@ -67,6 +67,10 @@ export function Browse({ saved, setSaved }) {
           </Card>
         </aside>
         <main>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', marginBottom: 18, background: 'var(--warning-bg)', color: 'var(--warning-fg)', borderRadius: 'var(--radius-sm)', fontSize: 13, fontWeight: 500 }}>
+            <Icon.shield size={16} stroke="var(--warning-fg)" />
+            Sample listings shown for demonstration. Real parcels come from sellers who list their own land.
+          </div>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: 28, color: 'var(--forest-800)', margin: 0 }}>Land for sale</h1>
